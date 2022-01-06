@@ -1,0 +1,22 @@
+本模块使用MessagePack库作为序列化/反序列化库，其地址为：github.com/tinylib/msgp
+使用方法见：https://github.com/tinylib/msgp/wiki/Getting-Started
+使用方法：
+1、通过命令
+go get -u -t github.com/tinylib/msgp
+下载安装msgp工具
+2、在定义的结构体的每个成员后添加标签,如下所示
+type ZeroMsg struct {
+	Information string `msg:"info"`
+}
+3、在定义结构体的文件添加语句
+//go:generate msgp
+4、在该文件目录下执行命令
+go generate
+该命令将自动产生两个文件，一个是gen文件另一个是gen_test文件，gen文件定义了序列化、反序列化和编解码的函数，gen_test文件则是对这些自动生成的函数进行测试
+
+测试生成的序列化相关函数命令：
+go test -v -bench .
+
+注意事项：
+1、定义的结构成员变量需要首字母大写，否则无法正常生成序列化函数
+2、go get安装的msgp工具在GOPATH目录的bin文件夹下，因此要把该路径添加到PATH环境变量中，否则找不到msgp工具

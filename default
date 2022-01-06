@@ -1,0 +1,43 @@
+[Log]
+LogToFile = false
+LogPath   = ./logs/log.log
+Level = 4
+
+[Node]
+WorkerList           = 127.0.0.1:5010,127.0.0.1:5011,127.0.0.1:5012,127.0.0.1:5013
+WorkerCandidateList  = 127.0.0.1:5010,127.0.0.1:5011,127.0.0.1:5012,127.0.0.1:5013
+VoterList            = 127.0.0.1:5010,127.0.0.1:5011,127.0.0.1:5012,127.0.0.1:5013
+BCManagementServerList = 127.0.0.1:5010,127.0.0.1:5011,127.0.0.1:5012,127.0.0.1:5013
+ServerNum            = 4
+SingleServerNodeNum  = 4
+IdentityIdentifier   =
+IP                   = 127.0.0.1
+PubIP                =
+Port                 = 5010
+HostName             = 本地
+AreaName             = Shenzhen
+CountryName          = China
+Longitude            = 114.07
+Latitude             = 22.62
+CacheTime            = 10
+IsNewJoin            = 0
+
+[Consensus]
+PubkeyList          = 0451147117459e988b1b929b125fe2647ba789c9f3c7d1ffa6633fb31ef15d75f281c22af93947f2d55d9ae60691099f4147622abcc793f328262ac29be1285948,0493267cad669dd66d315b4afe701f42a729f1c13240c1445ce227e7bbf72ee25f813b7052a4547d03421421223ef9cb2b23e73e59ac101bfda2e180bcc819ded4,04961d6ea2da4a3f095e241d60565cadbe92590fd7dafc7a3f94939e92f34d2bd4686b142be18b113c854b59cc4735d03c9e5552fe578eb07f30a0992bd1af118e,044026cb97c1af9a1d71a930ef273b6440d951dc088eb80cdcad6bb531a0531d6c2891c05a841fab28b783424d6d52a036687a161961207cc368fe88bf13c749d2
+PrikeyList          = 2366906aa790f357016238f33d2ab74787ec727d7e132df0aec221e6a4869601,a194ef08dc58a557df6a3c102ce6d7edba45116e0d4d3088d1d264b4e029420e,6d9c4567649abc33dc241e6ea49825193362765887ae9e6717e4bbd3ca7e7a77,dab21e0377332b29d3934325d0d3642a2c0ccc42542269ede081dde86c0b1706
+MyPubkey            =
+MyPrikey            =
+GenesisDutyWorker   = 0
+WorkerNum           = 4
+VotedNum            = 4
+BlockGroupPerCycle  = 100000
+Tcut                = 10.00
+GenerateBlockPeriod = 4.00
+TxPoolSize          = 100000
+
+[MIR]
+SqlitePath            = /home/min/identity/
+
+[SESSION]
+DefaultExpiration = 10
+CleanupInterval   = 10

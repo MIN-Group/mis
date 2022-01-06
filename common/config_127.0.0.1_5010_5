@@ -1,0 +1,44 @@
+[Log]
+LogToFile = false
+LogPath   = ./logs/log.log
+Level     = 6
+
+[Node]
+WorkerList             = 127.0.0.1:5010,127.0.0.1:5011,127.0.0.1:5012,127.0.0.1:5013,127.0.0.1:5014
+WorkerCandidateList    = 127.0.0.1:5010,127.0.0.1:5011,127.0.0.1:5012,127.0.0.1:5013,127.0.0.1:5014
+VoterList              = 127.0.0.1:5010,127.0.0.1:5011,127.0.0.1:5012,127.0.0.1:5013,127.0.0.1:5014
+BCManagementServerList = 127.0.0.1:5010,127.0.0.1:5011,127.0.0.1:5012,127.0.0.1:5013,127.0.0.1:5014
+ServerNum              = 1
+SingleServerNodeNum    = 5
+IdentityIdentifier     = 
+IP                     = 127.0.0.1
+PubIP                  = 
+Port                   = 5010
+HostName               = 本地
+AreaName               = Shenzhen
+CountryName            = China
+Longitude              = 114.07
+Latitude               = 22.62
+CacheTime              = 10
+IsNewJoin              = 0
+
+[Consensus]
+PubkeyList          = 04bea884c013fad577206e2a876de6b12985a701742b7540f6796093349907305357a16d14ff63ed01de05ff78a1b6e925e600087fca244c589a8c2a124c681836,04cfb03df19caa4c2b47e515d5b52cc3d9bf939d8408e29b3c0143d9b6cae832b144c5e4b42214841cb932ed27eafb9c8e78d67f5bf67f25940322a1be2246602f,042b1e0479751e042da1dd7e84ca75eac2ebef51b457201d995e3c5a708b812120a294521c598950e1bdc9cb42cb3a22f5e8efdf91e1ada125f55f64d10aa747ae,04a7cf4f4a347b68e22ee78a84a0cc0cd1e6a30e3ad6affd1ae2256c79d2a49128c0f809cdf0d577948f5747b466130e24a7d28bc009eb6f0db088dc4ada83b54e,046a6147b13d86b562b4f789ab0ca66ef76410f53d3696df8d000946cd3434ce37ff153113e3d82503ad2a88af12521e43b7eda7286198b2f5a4e098b7d5657e25
+PrikeyList          = d834a29a5324418311c0ca141ad034da5eb7d7ab896716ac0bba4bb5e38a7214,76f22a6a11c63c255c4cb33e0382d58daa98aeba6534bb12559066b7f520524f,b17ad5f3fb789c1c9f69181412c33ab9571bf963a027717d08051d3abc2e6b6f,07992e36c6790066fe423fe5d1f6900463861a892bbabc9f7feb365778d92f32,f8ef231dda9f06f1da564d2b384376fbcac799ddca011c1ce43a7ed29e2e9239
+MyPubkey            = 
+MyPrikey            = 
+GenesisDutyWorker   = 0
+WorkerNum           = 5
+VotedNum            = 5
+BlockGroupPerCycle  = 100000
+Tcut                = 20.00
+GenerateBlockPeriod = 8.00
+TxPoolSize          = 100000
+
+[SESSION]
+DefaultExpiration = 1000
+CleanupInterval   = 10
+
+[MIR]
+SqlitePath = /home/min/identity/
+
