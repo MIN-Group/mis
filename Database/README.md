@@ -6,7 +6,7 @@
 > mis  
 > mis20201001
 
-# MongoDB设置密码
+# Set password of MongoDB
 ```shell script
 mongo
 use admin
@@ -26,10 +26,10 @@ use blockchain
 db.createUser({ user: "mis", pwd: "mis20201001", roles: [{ role: "dbOwner", db: "blockchain" }] })
 ```
 
-# MongoDB设置索引
-在区块链启动之后，会在本地mongo数据库中建立以-LOG结尾的日志collection
-如果日志中的数据量过大会导致取数据排序过程中内存溢出
-因此需要设置排序的字段为索引，只需要执行下面一行命令
+# Set index of MongoDB
+After the blockchain is started, a log collection ending with -LOG will be established in the local mongo database.
+If the amount of data in the log is too large, it will cause memory overflow during the data fetching and sorting process.
+Therefore, it is necessary to set the sorted field as an index, and only need to execute the following line of command.
 
 ```shell script
 db.getCollection("xxxxxxxxxx-LOG").createIndex({"timestamp":1})
